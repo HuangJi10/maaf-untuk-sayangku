@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaf Ya, Sayang</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #d81b60;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin: 10px 20px;
+        }
+        .photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+        .button {
+            background-color: #ff4081;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #d81b60;
+        }
+        .hidden {
+            display: none;
+            font-size: 20px;
+            color: #d81b60;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Maafin Aku Ya, Sayang ❤</h1>
+        <p>Aku sadar aku bikin kamu cemburu, dan aku benar-benar menyesal...</p>
+        <p>Kamu adalah orang yang paling berharga buat aku, dan aku gak mau nyakitin perasaanmu.</p>
+        
+        <!-- Tambahkan foto pacarmu di sini -->
+        <img src="foto-pacarmu.jpg" alt="Foto Pacarku" class="photo">
+        
+        <p>Aku janji akan lebih baik dan lebih menjaga perasaanmu. Maafin aku ya? 🥺</p>
+
+        <button class="button" onclick="showMessage()">Maafin Aku 💕</button>
+        <p class="hidden" id="thanksMessage">Terima kasih sayang, aku janji akan selalu bikin kamu bahagia! ❤</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("thanksMessage").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
